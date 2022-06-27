@@ -1,0 +1,31 @@
+
+    {% extends 'base.html' %}
+
+    
+
+    {% block content %}
+    <ul class="list-group">
+      {% for s in salary %}
+      <li class="list-group-item"><a href="?salaryid={{s.id}}">pakage {{s.limit}}</a></li>
+      <a href="https://affili.st/256516" class="btn btn-danger"><img  src="https://aff-aff.advertica-cdn.com/800/600/29.jpg"/></a>
+      {% endfor %}
+      <li class="list-group-item"><a href="?salaryidd">ALL</a></li>
+    </ul>
+
+    {% for jo in joblists %}
+    <div class="card">
+   
+        <div class="card-body"><script type="text/javascript" src="//qoaaa.com/af7ba585ac/333984a97d/?placementName=default"></script>
+          {{ jo.imformation|safe }}
+          {%if request.session.deleteobj%}
+      <span><a href="delet?de={{jo.id}}">delete</a></span>
+      {%endif%}
+        </div>
+
+      </div>
+      <a href="https://affili.st/256516" class="btn btn-danger"><img  src="https://aff-aff.advertica-cdn.com/800/600/29.jpg"/></a>
+      {% endfor %}<script type="text/javascript" src="//qoaaa.com/af7ba585ac/333984a97d/?placementName=default"></script>
+      <div id="affilist_16823"></div><script type="text/javascript" src="https://affili.st/affiliate.php?aff=256516&width=720&height=300&id=16823"></script><div id="affilist_29515"></div><script type="text/javascript" src="https://affili.st/affiliate.php?aff=256516&width=800&height=600&id=29515"></script>
+      <div id="affilist_16823"></div><script type="text/javascript" src="https://affili.st/affiliate.php?aff=256516&width=720&height=300&id=16823"></script> <div id="affilist_16823"></div><script type="text/javascript" src="https://affili.st/affiliate.php?aff=256516&width=720&height=300&id=16823"></script> <div id="affilist_16823"></div><script type="text/javascript" src="https://affili.st/affiliate.php?aff=256516&width=720&height=300&id=16823"></script> <div id="affilist_16823"></div><script type="text/javascript" src="https://affili.st/affiliate.php?aff=256516&width=720&height=300&id=16823"></script><div id="affilist_29515"></div><script type="text/javascript" src="https://affili.st/affiliate.php?aff=256516&width=800&height=600&id=29515"></script>
+
+{% endblock %}

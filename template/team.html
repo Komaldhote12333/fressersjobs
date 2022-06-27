@@ -1,0 +1,26 @@
+
+    {% extends 'base.html' %}
+
+    
+
+    {% block content %}
+
+<ul class="list-group">
+    {% for mo in moviobj%}
+    
+    <li class="list-group-item disabled"><div class="card" style="width: 60rem;">
+        <img class="card-img-top" src="{{ mo.lik }}" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">download link in bellow</h5>
+          <p class="card-text">{{ mo.name|safe}}</p>
+          
+         
+        </div>
+      </div></li>
+      {%if request.session.deleteobj%}
+          <a href="mdelet?de={{mo.id}}">delete</a>
+  {%endif%}
+      {% endfor %}
+   
+  </ul>
+{%endblock%}

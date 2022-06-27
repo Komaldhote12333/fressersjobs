@@ -1,0 +1,40 @@
+
+    {% extends 'base.html' %}
+
+    
+
+    {% block content %}
+    <form action="{% url 'insertlocation'%}" method="post">
+        {% csrf_token %}
+        <h1>its for locations</h1>
+        {{places}}
+        <br>
+                    <button type="submit" class="btn btn-primary">add</button>
+                    <br>
+    </form>
+    <div id="affilist_16823"></div><script type="text/javascript" src="https://affili.st/affiliate.php?aff=256516&width=720&height=300&id=16823"></script>
+  
+    <form action="{% url 'insertjob'%}" method="post">
+        {% csrf_token %}
+        <h1>its for posting a job </h1>
+        {{nokari}}
+        <br>
+                    <button type="submit" class="btn btn-primary">add</button>
+                    <br>
+    </form>
+    <div id="affilist_16823"></div><script type="text/javascript" src="https://affili.st/affiliate.php?aff=256516&width=720&height=300&id=16823"></script>
+
+    <form action="{% url 'insertmoves'%}" method="post">
+        {% csrf_token %}
+        <h1>its for movies</h1>
+        {{picture}}
+        <br>
+                    <button type="submit" class="btn btn-primary">add</button>
+                    <br> <div id="affilist_16823"></div><script type="text/javascript" src="https://affili.st/affiliate.php?aff=256516&width=720&height=300&id=16823"></script>
+    </form>
+
+    <div id="affilist_16823"></div><script type="text/javascript" src="https://affili.st/affiliate.php?aff=256516&width=720&height=300&id=16823"></script>
+    <div id="affilist_16823"></div><script type="text/javascript" src="https://affili.st/affiliate.php?aff=256516&width=720&height=300&id=16823"></script>
+    <div id="affilist_16823"></div><script type="text/javascript" src="https://affili.st/affiliate.php?aff=256516&width=720&height=300&id=16823"></script>
+    <div id="affilist_16823"></div><script type="text/javascript" src="https://affili.st/affiliate.php?aff=256516&width=720&height=300&id=16823"></script>
+{%endblock%}
